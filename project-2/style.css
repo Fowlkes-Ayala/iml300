@@ -1,27 +1,15 @@
 body {
-  background-image: url("assets/sky.gif");
+  background-image: url("assets/club.webp");
   background-size: cover;
   height: 100vh;
 }
 
 img {
-  height: 150px;
+  height: 450px;
+  translate: 500px 0px;
   border-radius: 20px;
   padding: 10px;
-  transition: 1s;
-  filter: grayscale(100%);
-  /*      border: 3px solid blue; */
-}
-
-img:hover {
-  height: 400px;
-  filter: grayscale(0%);
-  /*   border: 1px solid red; */
-}
-
-p:hover {
-  /*   transform: rotate(5deg); */
-  letter-spacing: 1em;
+  animation: flipAnimation 1s infinite;
 }
 
 .specialCenter {
@@ -34,19 +22,51 @@ h1,
 a {
   animation: coolAnimation 3s infinite;
 }
+h1 {
+  font-size: 50px;
+}
 
-#p1 {
-  animation: coolAnimation 5s infinite;
+p{
+  font-size: 35px;
+  color: white;
+}
+
+button{
+  text-align: center;
+  font-size: 20px;
 }
 
 @keyframes coolAnimation {
   0% {
     color: red;
   }
-  50% {
+  33% {
     color: green;
   }
-  100% {
+  66% {
     color: blue;
   }
+  100% {
+    color: red;
+  }
 }
+
+@keyframes flipAnimation {
+  0% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  1% {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  49% {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  50% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
