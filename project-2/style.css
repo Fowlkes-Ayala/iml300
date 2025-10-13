@@ -12,6 +12,10 @@ img {
   animation: flipAnimation 1s infinite;
 }
 
+img:hover {
+  height: 200px;
+}
+
 .specialCenter {
   display: flex;
   flex-direction: column;
@@ -31,6 +35,9 @@ p{
   color: white;
 }
 
+
+
+/* button styles continue */
 button{
   text-align: center;
   font-size: 20px;
