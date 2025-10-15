@@ -1,0 +1,8 @@
+@font-face {
+    font-family: PFVideotextPro-Regular;
+    src: url("assets/PFVideotextProRegular.ttf");
+  }
+  
+  h1 {
+    font-family: PFVideotextPro-Regular;
+  }
