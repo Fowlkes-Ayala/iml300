@@ -1,8 +1,22 @@
 @font-face {
-    font-family: PFVideotextPro-Regular;
-    src: url("assets/PFVideotextProRegular.ttf");
-  }
-  
-  h1 {
-    font-family: PFVideotextPro-Regular;
-  }
+  font-family: 'Archimoto';
+  src: url('assets/ArchimotoV01-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Archimoto', Arial, sans-serif;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+h1 {
+  font-size: xxx-large;
+}
+p1 {
+  font-size: x-large;
+}
+
+a{
+  font-size: x-large;
+}
