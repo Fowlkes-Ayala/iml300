@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="cursor-reticle.js"></script>
 </head>
 <body>
-    <h1>What do you consider when evaluating moral status?</h1>
+    <h1>A Common Moral Metric</h1>
+    
+    <p>What do you consider when evaluating moral status?</p>
     <input
         type="checkbox"
         id="moralStatus"
@@ -20,7 +24,7 @@
     <label for="moralStatus"> Your ability to experience pain</label><br>
 
     <input type="checkbox" id="moralStatus" name="moralStatus" value="Agree">
-    <label for="moralStatus"> Your ability to form a social network</label><br>
+    <label for="moralStatus"> Your ability to hold relationships</label><br>
 
     <input type="checkbox" id="moralStatus" name="moralStatus" value="Disagree">
     <label for="moralStatus"> The kind of body you inhabit</label><br>
@@ -32,55 +36,67 @@
     <label for="moralStatus"> Your lifespan</label><br>
 
     <input type="checkbox" id="moralStatus" name="moralStatus" value="Disagree">
-    <label for="moralStatus"> The origin of your creation</label><br>
+    <label for="moralStatus"> The origin of your creation</label><br><br>
 
     <input type="submit" value="Submit">
 
+    <p>
+        If you selected...
+    </p>
+    
+    
     <p id="p1">
         <details>
             <summary>
-                If you selected "Your lifespan"<br>
+                Your lifespan<br>
             </summary>
-            From this premise, it follows that AI is deserving of greater moral status than human beings.<br>
-            <a href="final-dilemma.html">I ACCEPT this conclusion.</a>
-            <a href="3rd-argument.html">I REBUT this conclusion.</a>
+            <p class='level-1-indent'>
+                From this premise, it follows that <span class="ai-term">AI</span>s, with a potentially 
+                infinite lifespan, are deserving of greater moral status than human beings.<br>
+            </p>
+            <a href="final-dilemma.html" class="nav-link level-1-indent">ACCEPT↵</a>
+            <a href="3rd-argument.html" class="nav-link level-1-indent">REBUT↵</a>
+          </details>
+    </p>
+
+    <p>
+        <details>
+            <summary>
+                your ability to reason, experience pain, or hold relationships<br>
+            </summary>
+            <p class='level-1-indent'>
+                From this premise, it follows that <span class="ai-term">AI</span>s who could possess all these qualities are deserving of equal moral status as human beings.<br>
+            </p>
+            <a href="final-dilemma.html" class="nav-link level-1-indent">ACCEPT↵</a>
+            <a href="3rd-argument.html" class="nav-link level-1-indent">REBUT↵</a>
           </details>
     </p>
 
     <p id="p2">
         <details>
             <summary>
-                If you selected "your ability to reason"<br>
-                "your ability to experience pain,"<br>
-                "your ability to form a social network,"<br>
+                the origin of your creation<br>
             </summary>
-            From this premise, it follows that AI is deserving of equal moral status as human beings.<br>
-            <a href="final-dilemma.html">I ACCEPT this conclusion.</a>
-            <a href="3rd-argument.html">I REBUT this conclusion.</a>
+            <p class='level-1-indent'>
+                From this premise, it follows that babies fertilized In Vitro<br>
+                are of lesser moral status than babies fertilized "naturally."<br>
+            </p>
+            <a href="final-dilemma.html" class="nav-link level-1-indent">I HOLD THIS POSITION↵</a>
+            <a href="3rd-argument.html" class="nav-link level-1-indent">I CONCEDE THIS POSITION↵</a>
           </details>
     </p>
 
     <p id="p2">
         <details>
             <summary>
-                If you selected "the origin of your creation"<br>
+                the kind of body you have<br>
             </summary>
-            From this premise, it follows that babies fertilized In Vitro<br>
-            are of lesser moral status than babies fertilized through intercourse.
-            <a href="final-dilemma.html">I HOLD this position.</a>
-            <a href="3rd-argument.html">I CONCEDE this position.</a>
-          </details>
-    </p>
-
-    <p id="p2">
-        <details>
-            <summary>
-                If you selected "the kind of body you have"<br>
-            </summary>
-            From this premise, it follows that an amputee with a mechanical arm<br>
-            is of lesser moral status than a human with a flesh arm.
-            <a href="final-dilemma.html">I HOLD this position.</a>
-            <a href="3rd-argument.html">I CONCEDE this position.</a>
+            <p class='level-1-indent'>
+                From this premise, it follows that an amputee with an artificial arm<br>
+                is of lesser moral status than someone with a flesh arm.<br>
+            </p>
+            <a href="final-dilemma.html" class="nav-link level-1-indent">I HOLD THIS POSITION↵</a>
+            <a href="3rd-argument.html" class="nav-link level-1-indent">I CONCEDE THIS POSITION↵</a>
           </details>
     </p>
 </body>

@@ -1,3 +1,31 @@
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10000;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15) 0px,
+    transparent 1px,
+    transparent 2px,
+    rgba(0, 0, 0, 0.15) 3px
+  );
+  animation: scanline 8s linear infinite;
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
 @font-face {
   font-family: 'Archimoto';
   src: url('assets/ArchimotoV01-Medium.otf') format('opentype');
@@ -5,18 +33,109 @@
   font-style: normal;
 }
 
+html{
+  cursor: none;
+  background-color: #dce2e2;
+}
+
+canvas {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+}
+
 body {
   font-family: 'Archimoto', Arial, sans-serif;
   margin-left: 25%;
   margin-right: 25%;
+  color: #727c7c;
 }
 h1 {
   font-size: xxx-large;
+  color: #505859;
 }
-p1 {
+
+p {
   font-size: x-large;
+}
+
+p1{
+  font-size: x-large;
+  color: #505859;
+}
+
+input[type="submit"] {
+  font-family: 'Archimoto', Arial, sans-serif;
+  color: #505859;
+}
+
+/* hanging indent */
+
+.hanging-indent {
+  padding-left: 40px;
+  text-indent: -40px;
+  font-size: large;
+}
+
+input[type="checkbox"] {
+  font-family: 'Archimoto', Arial, sans-serif;
+  color: #505859;
+  margin-left: 3%;
+}
+
+.level-1-indent{
+  margin-left: 3%;
+  font-size: large;
+}
+
+.inline-indent{
+  margin-left: 3%;
+}
+
+.large-font{
+  font-size: large;
 }
 
 a{
   font-size: x-large;
+}
+
+summary{
+  font-size: x-large;
+}
+
+a {
+  font-size: x-large;
+  color: #0EBA90;
+}
+
+a:hover {
+  animation: doubleBlink 0.2s;
+}
+
+@keyframes doubleBlink {
+  0%{
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  26% {
+    opacity: 1;
+  }
+  50%{
+    opacity: 1;
+  }
+  51%{
+    opacity: 0;
+  }
+  75%{
+    opacity: 0;
+  }
+  76%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
 }
