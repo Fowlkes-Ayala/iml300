@@ -11,17 +11,35 @@
     font-style: normal;
 }
 
+#chat-transcript-field{
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 4;
+}
+
+h1#title{
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+    border: #000000, 10px, solid;
+}
+
+#analyze-button{
+    grid-column: 5 / span 4;
+    grid-row: 6 / span 1;
+}
+
 /* LAYOUT GRID */
 .layout-grid {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, auto);
-  
-    padding: 60px 100px;  /* vertical + horizontal margins */
-  
-    column-gap: 60px;
-    row-gap: 60px;
-}
+    grid-template-columns: repeat(8, 8.31vw);
+    column-gap: 3.125vw; 
+    grid-template-rows: repeat(6, 10.185vh);
+    row-gap: 3.125vw;
+    padding: 0;
+    margin-top: 3.125vw;
+    margin-bottom: 3.125vw;
+    margin-left: 9.259259vh;
+    margin-right: 9.259259vh;
+  }
 
 h1 {
     font-family: 'NeueHaas';
@@ -29,6 +47,8 @@ h1 {
     font-size: 96px;
     line-height: 100%;
     color: #000000;
+    margin: 0;
+    padding: 0;
 }
 h2 {
     font-family: 'NeueHaas';
@@ -36,6 +56,8 @@ h2 {
     font-size: 40px;
     line-height: 136%;
     color: #000000;
+    margin: 0;
+    padding: 0;
 }
 h3 {
     font-family: 'NeueHaas';
@@ -43,6 +65,8 @@ h3 {
     font-size: 32px;
     line-height: 136%;
     color: #000000;
+    margin: 0;
+    padding: 0;
 }
 body {
     font-family: 'NeueHaas';
@@ -50,4 +74,6 @@ body {
     font-size: 32px;
     line-height: 136%;
     color: #000000;
+    margin: 0;
+    padding: 0;
 }
