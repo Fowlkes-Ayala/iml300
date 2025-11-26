@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'NeueHaas';
+    src: url('assets/NeueHaasDisplayMedium.ttf') format('truetype');
+    font-weight: 65;
+    font-style: medium;
+}
+@font-face {
+    font-family: 'NeueHaas';
+    src: url('assets/NeueHaasDisplayRomanttf') format('truetype');
+    font-weight: 45;
+    font-style: normal;
+}
+
+/* LAYOUT GRID */
+.layout-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, auto);
+  
+    padding: 60px 100px;  /* vertical + horizontal margins */
+  
+    column-gap: 60px;
+    row-gap: 60px;
+}
+
+h1 {
+    font-family: 'NeueHaas';
+    font-style: medium;
+    font-size: 96px;
+    line-height: 100%;
+    color: #000000;
+}
+h2 {
+    font-family: 'NeueHaas';
+    font-style: medium;
+    font-size: 40px;
+    line-height: 136%;
+    color: #000000;
+}
+h3 {
+    font-family: 'NeueHaas';
+    font-style: medium;
+    font-size: 32px;
+    line-height: 136%;
+    color: #000000;
+}
+body {
+    font-family: 'NeueHaas';
+    font-style: normal;
+    font-size: 32px;
+    line-height: 136%;
+    color: #000000;
+}
