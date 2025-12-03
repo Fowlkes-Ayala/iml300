@@ -16,24 +16,64 @@
     grid-row: 3 / span 4;
 }
 
-h1#title{
-    grid-column: 1 / span 4;
-    grid-row: 1 / span 2;
-    border: #000000, 10px, solid;
-}
-
 #analyze-button{
     grid-column: 5 / span 4;
     grid-row: 6 / span 1;
+}
+
+#numPrompts-text{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    font-size: 20px;
+}
+
+#electricity-text{
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+    font-size: 20px;
+}
+
+#results-context{
+    grid-column: 4 / span 5;
+    grid-row: 1 / span 2;
+    font-size: 20px;
+}
+
+#results-body{
+    height: 15250px;
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: repeat(8, 8.31vw);
+    gap: 3.125vw;
+    grid-template-rows: repeat(120, 10.185vh);
+    padding: 0;
+    margin-top: 3.125vw;
+    margin-bottom: 3.125vw;
+    margin-left: 9.259259vh;
+    margin-right: 9.259259vh;
+}
+
+p#sources-text{
+    grid-column: 1 / span 8;
+    grid-row: 2 / span 6;
+    margin: 0;
+    padding-top: 8px;
+    line-height: 1;
+}
+
+#verify-us{
+    grid-column: 7 / span 2;
+    grid-row: 1 / span 1;
+    text-align: right;
+    font-size: 24px;
 }
 
 /* LAYOUT GRID */
 .layout-grid {
     display: grid;
     grid-template-columns: repeat(8, 8.31vw);
-    column-gap: 3.125vw; 
+    gap: 3.125vw; 
     grid-template-rows: repeat(6, 10.185vh);
-    row-gap: 3.125vw;
     padding: 0;
     margin-top: 3.125vw;
     margin-bottom: 3.125vw;
@@ -41,15 +81,40 @@ h1#title{
     margin-right: 9.259259vh;
   }
 
+#canvas-holder{
+    grid-column: 1 / span 8;
+    grid-row: 3 / span 117;
+}
+
 h1 {
     font-family: 'NeueHaas';
     font-style: medium;
-    font-size: 96px;
+    font-size: 71px;
     line-height: 100%;
     color: #000000;
     margin: 0;
     padding: 0;
 }
+
+h1#title{
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+    margin: 0;
+    padding-top: 8px;
+    line-height: 1;
+    /*border: 2px solid red;*/
+}
+
+#chat-transcript-field{
+    font-family: 'NeueHaas';
+    font-style: normal;
+    font-size: 32px;
+    line-height: 136%;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
 h2 {
     font-family: 'NeueHaas';
     font-style: medium;
@@ -68,7 +133,7 @@ h3 {
     margin: 0;
     padding: 0;
 }
-body {
+p {
     font-family: 'NeueHaas';
     font-style: normal;
     font-size: 32px;

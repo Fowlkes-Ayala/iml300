@@ -4,20 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI CARBON FOOTPRINT CALCULATOR</title>
-    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class = "layout-grid">
-        <p id="prompt-count"></p>
-    </div>
+<body id="results-body">
+    <p id="numPrompts-text"></p>
+    <p id="electricity-text"></p>
+    
+    <div id="canvas-holder"></div>
 
+    <p id = "results-context">
+        All the circles below total to the average American’s carbon footprint. The red slice is what you would tack on with an entire year of ChatGPT use at the rate you entered. Individuals are not the problem.
+
+        <br><br>This estimate assumes that you are a university student enrolled in an average course load and for every assignment, you use ChatGPT at the submitted rate.
+
+    </p>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.min.js"></script>
+    <script src="sketch.js"></script>
     <script>
         const params = new URLSearchParams(window.location.search);
         const count = params.get("count");
+        const electricity = params.get("electricity");
+        const water = params.get("water");
+        const carbon = params.get("carbon");
     
-        document.getElementById("prompt-count").textContent =
-            `You prompted the LLM ${count} times.`;
+        document.getElementById("numPrompts-text").textContent =
+            `Your prompts totaled ${count} words.`;
+
+        document.getElementById("electricity-text").textContent =
+            `You used ${electricity}Wh of electricity, ${water}mL of water, and emitted ${carbon}g of CO2.`;
     </script>
 </body>
 </html>
