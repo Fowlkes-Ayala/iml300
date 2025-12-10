@@ -33,10 +33,42 @@
     font-size: 20px;
 }
 
+#instructions{
+    grid-column: 5 / span 4;
+    grid-row: 3 / span 2;
+    font-size: 28px;
+}
+
+#about-link{
+    grid-column: 5 / span 2;
+    grid-row: 1 / span 1;
+    text-align: right;
+    font-size: 24px;
+}
+
 #results-context{
     grid-column: 4 / span 5;
     grid-row: 1 / span 2;
     font-size: 20px;
+}
+
+#home-button{
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    font-size: 24px;
+}
+
+#home-button-sources{
+    grid-column: 6 / span 3;
+    grid-row: 1 / span 1;
+    text-align: right;
+    font-size: 24px;
+}
+
+#about-text{
+    grid-column: 2 / span 6;
+    grid-row: 2 / span 4;
+    font-size: 24px;
 }
 
 #results-body{
